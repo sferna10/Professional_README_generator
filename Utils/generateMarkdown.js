@@ -21,6 +21,7 @@ return '';
 
 function generateMarkdown(data) {
     return '# ${data.title}
+
 ${renderLicenseBadge(data.license)}
 
 ## Description
@@ -71,4 +72,4 @@ If you have any questions about the reportError. open an issue or contant me  di
 
 ;
 }
-module.exports = generateMarkdown;
+export default generateMarkdown;
