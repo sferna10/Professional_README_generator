@@ -1,7 +1,7 @@
-const fs = require("fs");
-const path = require("path");
-const inquirer = require("inquirer");
-const generateMarkdown = require("./Utils/generateMarkdown").default;
+const fs = require(`fs`);
+const path = require(`path`);
+const inquirer = require(`inquirer`);
+const generateMarkdown = require(`./Utils/generateMarkdown`);
 
 const promptUser = () => {
   return inquirer.prompt([
@@ -55,8 +55,8 @@ function writeTofile(fileName, data) {
 }
 function init() {
     promptUser().then((_inquirerResponses_) => {
-      console.log("generating README...");
-      writeTofile("README.md", generateMarkdown({ ..._inquirerResponses_ }));
+      console.log(`generating README...`);
+      writeTofile(`README.md`, generateMarkdown({ ...inquirerResponses }));
     });
   }
 
