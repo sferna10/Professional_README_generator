@@ -5,7 +5,7 @@ function renderLicenseBadge(license){
 return '';
 }
 
-function renderLicenseLin(license){
+function renderLicenseLink(license){
     if (license !== "None"){
         return '\n* [License](#license)\n';
     }
@@ -20,9 +20,7 @@ return '';
 }
 
 function generateMarkdown(data) {
-    return '# ${data.title}
-
-${renderLicenseBadge(data.license)}
+    return '# ${data.title} ${renderLicenseBadge(data.license)}
 
 ## Description
 
@@ -37,7 +35,7 @@ ${renderLicenseLink(data.license)}
 *[Tests](#test)
 *[Questions](#questions)
 
-##Installation
+## Installation
 
 To install necessary dependencies, run the following command:
 
@@ -54,6 +52,7 @@ ${data.usage}
 ${renderLicenseSection(data.license)}
 
 ## Contributing
+
 ${data.contributing}
 
 ## Tests
@@ -64,12 +63,13 @@ To run tests, run the following command:
 ${data.test}
 \'\'\'
 
-##Questions
+## Questions
 
 If you have any questions about the reportError. open an issue or contant me  directly at ${
     data.email
-}. You can find more of my work at [${data.github}](https://github.com/${data.github}/),
-
+}. You can find more of my work at [${data.github}](https://github.com/${
+    data.github
+}/),
 ;
 }
-export default generateMarkdown;
+module.exports=generateMarkdown;
