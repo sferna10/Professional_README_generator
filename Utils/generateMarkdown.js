@@ -14,13 +14,15 @@ function renderLicenseLink(license){
 
 function renderLicenseSection(license){
     if (license !== `None`){
-        return `## License This project is licensed under the $(license) license.';
+        return `## License 
+    
+        This project is licensed under the ${license} license.`;
     }
 return ``;
 }
 
 function generateMarkdown(data) {
-    return ``#${data.title} ${renderLicenseBadge(data.license)}
+    return `#${data.title} ${renderLicenseBadge(data.license)}
 
 ## Description
 
@@ -28,7 +30,7 @@ ${data.description}
 
 ## Table of Contents
 
-* [Installation](#installation)
+*[Installation](#installation)
 *[Usage](#usage)
 ${renderLicenseLink(data.license)}
 *[Contributing](#contributing)
@@ -69,7 +71,7 @@ If you have any questions about the reportError. open an issue or contant me  di
     data.email
 }. You can find more of my work at [${data.github}](https://github.com/${
     data.github
-}/),
-;
+}/).
+`;
 }
-module.exports=generateMarkdown
+module.exports=generateMarkdown;
