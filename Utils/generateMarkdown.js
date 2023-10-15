@@ -1,26 +1,26 @@
 function renderLicenseBadge(license){
-    if (license !== 'None'){
-        return '![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)';
+    if (license !== `None`){
+        return `![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)`;
     }
-return '';
+return ``;
 }
 
 function renderLicenseLink(license){
-    if (license !== "None"){
-        return '\n* [License](#license)\n';
+    if (license !== `None`){
+        return `\n* [License](#license)\n`;
     }
-    return '';
+    return ``;
 }
 
 function renderLicenseSection(license){
-    if (license !== 'None'){
-        return '## License This project is licensed under the $(license) license.';
+    if (license !== `None`){
+        return `## License This project is licensed under the $(license) license.';
     }
-return '';
+return ``;
 }
 
 function generateMarkdown(data) {
-    return '# ${data.title} ${renderLicenseBadge(data.license)}
+    return ``#${data.title} ${renderLicenseBadge(data.license)}
 
 ## Description
 
@@ -39,11 +39,11 @@ ${renderLicenseLink(data.license)}
 
 To install necessary dependencies, run the following command:
 
-\'\'\'
+\`\`\`
 
 ${data.installation}
 
-\'\'\'
+\`\`\`
 
 ## Usage
 
@@ -58,10 +58,10 @@ ${data.contributing}
 ## Tests
 
 To run tests, run the following command:
-\'\'\'
+\`\`\`
 
 ${data.test}
-\'\'\'
+\`\`\`
 
 ## Questions
 
@@ -72,4 +72,4 @@ If you have any questions about the reportError. open an issue or contant me  di
 }/),
 ;
 }
-module.exports=generateMarkdown;
+module.exports=generateMarkdown

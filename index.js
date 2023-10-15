@@ -51,13 +51,13 @@ const promptUser = () => {
   ]);
 };
 function writeTofile(fileName, data) {
-  returnfs.writeFileSync(path.join(process.cwd(), fileName), data);
+  return fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }
 function init() {
-  inquirer.prompt(questions).then((inquirerResponses) => {
-    console.log("generating README...");
-    writeTofile("README.md", generateMarkdown({ ...inquirerResponses }));
-  });
-}
+    promptUser().then((_inquirerResponses_) => {
+      console.log("generating README...");
+      writeTofile("README.md", generateMarkdown({ ..._inquirerResponses_ }));
+    });
+  }
 
 init();
