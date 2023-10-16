@@ -2,15 +2,13 @@
 
 ## Description
 
- command-line application that dynamically generates a professinal README.md file form a user's input using inquirer package and npm
+A command-line application that dynamically generates a professinal README.md file form a user's input using inquirer package and npm
 
 ## Table of Contents
 
 *[Installation](#installation)
 *[Usage](#usage)
-
-* [License](#license)
-
+*[License](#license)
 *[Contributing](#contributing)
 *[Tests](#test)
 *[Questions](#questions)
@@ -19,9 +17,8 @@
 
 To install necessary dependencies, run the following command:
 
-```
-
-undefined
+npm init
+npm i inquirer@8.2.4
 
 ```
 
@@ -34,6 +31,8 @@ Require Package Json and Inquirer installed
         This project is licensed under the MIT license.
 
 ## Contributing
+
+I want to thank AskBCS Learning Assitance for the support and tutoring gave to finish this project.
 
 undefined
 
