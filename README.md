@@ -2,11 +2,8 @@
 
 ## Description
 
-<<<<<<< HEAD
-A command-line application that dynamically generates a professinal README.md file form a user's input using inquirer package and npm
-=======
- A command-line application that dynamically generates a professional README.md file form a user's input using inquirer package and npm
->>>>>>> aa5d838449be0c82f90ae7f84b6e92d42f4b151b
+ A command-line application that dynamically generates a professional README.md file from a user's input using inquirer package and npm
+
 
 ## Table of Contents
 
@@ -28,7 +25,14 @@ npm i inquirer@8.2.4
 
 ## Usage
 
-Require Package Json and Inquirer installed
+Require Package Json and Inquirer installed. To generate the Professional README.md file, the user should answer the questions that will pop up after  typing "node index.js"
+
+chrome-extension://mmeijimgabbpbgpdklnllpncmdofkcpn/app.html#/files/29d747e7-dae4-4593-yd8c-9df6509765d7
+
+![image](https://github.com/sferna10/Professional_README_generator/assets/139423719/817b7435-b1d9-4f3b-bd79-8292d2c2ed73)
+
+![image](https://github.com/sferna10/Professional_README_generator/assets/139423719/57ca5dcc-478d-42e5-8d2d-748fc0feceeb)
+
 
 ## License 
     
@@ -36,14 +40,11 @@ Require Package Json and Inquirer installed
 
 ## Contributing
 
-I want to thank AskBCS Learning Assitance for the support and tutoring gave to finish this project.
-
-undefined
+I want to thank AskBCS Learning Assitance for the support and tutoring given to finish this project.
 
 ## Tests
 
 To run tests, run the following command:
-```
 
 npm tests
 ```
