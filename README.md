@@ -27,6 +27,7 @@ npm i inquirer@8.2.4
 
 Require Package Json and Inquirer installed. To generate the Professional README.md file, the user should answer the questions that will pop up after  typing "node index.js"
 
+![screenshot_resized](https://github.com/sferna10/Professional_README_generator/assets/139423719/d40d4a53-4339-493a-a413-4f6af2a20778)
 
 
 
