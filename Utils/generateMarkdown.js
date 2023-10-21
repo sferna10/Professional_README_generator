@@ -67,7 +67,7 @@ ${data.test}
 
 ## Questions
 
-If you have any questions about the reportError. open an issue or contant me  directly at ${
+If you have any questions about the report-Error. open an issue or contact me  directly at ${
     data.email
 }. You can find more of my work at [${data.github}](https://github.com/${
     data.github
