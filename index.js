@@ -33,8 +33,8 @@ const promptUser = () => {
     },
     {
       type: "input",
-      name: "Contributing",
-      message: "Do you have contributions?",
+      name: "contributing",
+      message: "Do you have any contributions?",
     },
     {
       type: "input",
