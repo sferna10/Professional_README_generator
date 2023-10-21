@@ -31,11 +31,7 @@ const promptUser = () => {
       message: "What kind of license should your project have?",
       choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"],
     },
-    {
-      type: "input",
-      name: "contributing",
-      message: "Do you have any contributions?",
-    },
+   
     {
       type: "input",
       name: "installation",
@@ -52,6 +48,11 @@ const promptUser = () => {
       type: "input",
       name: "usage",
       message: "What does the user need to know about using the repo?",
+    },
+    {
+      type: "input",
+      name: "contributing",
+      message: "What does the user needs to know about contributing to the repo?",
     },
   ]);
 };
