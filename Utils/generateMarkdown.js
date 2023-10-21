@@ -22,7 +22,7 @@ return ``;
 }
 
 function generateMarkdown(data) {
-    return `#${data.title} ${renderLicenseBadge(data.license)}
+    return `# ${data.title} ${renderLicenseBadge(data.license)}
 
 ## Description
 
@@ -30,12 +30,12 @@ ${data.description}
 
 ## Table of Contents
 
-*[Installation](#installation)
-*[Usage](#usage)
+* [Installation](#installation)
+* [Usage](#usage)
 ${renderLicenseLink(data.license)}
-*[Contributing](#contributing)
-*[Tests](#test)
-*[Questions](#questions)
+* [Contributing](#contributing)
+* [Tests](#test)
+* [Questions](#questions)
 
 ## Installation
 

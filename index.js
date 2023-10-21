@@ -33,7 +33,12 @@ const promptUser = () => {
     },
     {
       type: "input",
-      name: "Installation",
+      name: "Contributing",
+      message: "Do you have contributions?",
+    },
+    {
+      type: "input",
+      name: "installation",
       message: "What command should be run to install dependencies",
       default: "npm i",
     },
